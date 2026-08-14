@@ -1,0 +1,26 @@
+.navButton {
+
+ color: rgb(235, 80, 39);
+ text-decoration: none;  
+ color: inherit; 
+ cursor: pointer; 
+    border-radius: 8px;
+    border: 4px solid rgb(235, 80, 39);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background: transparent;
+}
+
+.navButton:hover { 
+    background:rgb(235, 80, 39);
+    color: rgb(244, 241, 224);
+}
+
+.menuHolder { 
+height: 40%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 1rem;
+font-weight: 700;
+color: rgb(235, 80, 39);
+}
