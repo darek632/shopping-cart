@@ -1,5 +1,5 @@
 import { Link,NavLink } from 'react-router';
-import styles from './Navbar.module.css'
+import styles from './NavBar.module.css'
 import { Outlet } from "react-router";
 
 export const NavBar = ({cartQuantity}) => { 
