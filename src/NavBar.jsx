@@ -6,7 +6,7 @@ export const NavBar = ({cartQuantity}) => {
 
     return(
         <>
-        <img src="/" alt="Shop logo" />
+        <div className={styles.heroTitle}>WAIGHTROUS</div>
 
         <div className={styles.menuHolder}>
             <Link className={styles.navButton} to="">Home </Link>

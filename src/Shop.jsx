@@ -35,30 +35,29 @@ const ProductCard = ({title,description,price,rating, imageUrl, cartQuantity, se
   
     return(<>
     <div className={styles.card}>
-                        <div>
-                            <img className={styles.cardImage} src={imageUrl} alt={title}/>
-                        </div>
+                        
+                        <img className={styles.cardImage} src={imageUrl} alt={title}/>
                         <div className={styles.cardText}>
-                            <div>
-                                <h4 className={styles.title}>{title}</h4>
-                                
-                            </div>
+                            <h4 className={styles.title}>{title}</h4>
                             {/* <p className={styles.description}>{description} </p> */}
-                            <div className={styles.productLinks}>
-                                <div> {rating} stars </div>
-                                <div> {`£${price}`} </div>
-                                <div className={styles.quantitySelector}>
-                                    <button onClick={decrement}>-</button>
-                                    <input 
-                                        type="number" 
-                                        value={quantity} 
-                                        onChange={(e) => setQuantity(Number(e.target.value))}
-                                        min="1"
-                                    />
-                                    <button onClick={increment}>+</button>
 
-                                </div>
-                                <div> <button className={styles.addToCart} onClick={handleAddToCart}>Add to cart </button></div>
+                            <div className={styles.productMeta}>
+                                <div className={styles.rating}> {rating} ★ </div>
+                                <div className={styles.price}> {`£${price}`} </div>
+                            </div>
+                                 <div className={styles.cardActions}>
+                                    <div className={styles.quantitySelector}>
+                                        <button onClick={decrement}>-</button>
+                                        <input 
+                                            type="number" 
+                                            value={quantity} 
+                                            onChange={(e) => setQuantity(Number(e.target.value))}
+                                            min="1"
+                                        />
+                                        <button onClick={increment}>+</button>
+
+                                    </div>
+                                     <button className={styles.addToCart} onClick={handleAddToCart}>Add to cart </button>
                                 
                             </div>
                         </div>

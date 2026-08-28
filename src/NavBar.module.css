@@ -31,3 +31,9 @@ padding-bottom: 2rem;
     border-radius: 4px;
   
 }
+
+
+.heroTitle {
+    color:  rgb(244, 241, 224);
+    font-weight: 700;
+}

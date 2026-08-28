@@ -68,16 +68,19 @@ export const Home = () => {
           <div className={`${styles.main} ${styles.about}`}>
              <h1>WAIGHTROUS </h1>
 
-                <div className={styles.heroBanner}>
-                    <img className={styles.heroImage} src={bannerImage} alt='banner image plate of food' />
-                    <div className={styles.heroText}>
-                        <h2>SHOP YOUR FAVOURITES ONLINE</h2>
-                    </div>
-                </div>
+<div className={styles.heroBanner}>
+    <img className={styles.heroImage} src={bannerImage} alt='banner image of clothing' />
+    <div className={styles.heroText}>
+        <span className={styles.heroEyebrow}>New season · Just landed</span>
+        <h2>Wear what moves you</h2>
+        <p className={styles.heroSubtext}>Curated fits, honest prices, delivered to your door.</p>
+        <button className={styles.heroCta}>Shop the new arrivals</button>
+    </div>
+</div>
+                <div></div>
            
-            <p>Featured items</p>
-            <p> Paragraph 2</p>
-            <FeaturedProduct/>
+            
+            {/* <FeaturedProduct/> */}
 
         </div>
 
