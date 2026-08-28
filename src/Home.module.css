@@ -1,7 +1,126 @@
+.main h1, .main h2, .main h3 {
+    color: inherit;
+}
+
+.main h1 {
+    letter-spacing: 0.2rem;
+}
 .main {
     display:block;
-    border: 1px solid green;
-   
-    
     text-align: center;
+}
+
+.about {
+        /* background-color: #02462F;
+    clip-path: polygon(0 0, 100% 0, 100% 41%, 0% 100%); */
+    /* z-index: -1; */
+     height: 80vh;
+     color:  rgb(244, 241, 224);
+     
+
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* fills the entire .about area */
+  background-color: #02462F;
+  clip-path: polygon(0 0, 100% 0, 100% 41%, 0% 100%);
+  z-index: -1; /* sits behind the actual content */
+}
+
+.card { 
+    outline: 2px solid red;
+  background-color: 	#f7f7f7;
+  color: black;
+  height: 300px;
+  width: 200px;
+  /* box-shadow: rgb(255, 210, 100) 3px 3px 3px 0px; */
+  border-radius: 4px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  padding: 10px;
+  display:flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.card:hover { 
+    background-color: #bbbdbe;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+.cardImage { 
+    border-radius: 4px;
+    height: 150px;
+    width: 100%;
+   object-fit: cover;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+  min-height: 0; 
+  overflow: hidden;
+}
+
+h4 {
+    padding: none;
+    margin: none;
+}
+
+.title {
+/* removing h4 default padding/margins */
+    font-size: 0.8rem;
+  margin: 0.4rem 0 0.2rem 0; 
+  line-height: 1.0;
+}
+
+.description {
+    font-size: 0.75rem;
+  margin: 0;
+  line-height: 1.3;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+img {
+    border: 1px solid yellow;
+}
+
+.heroBanner { 
+    border: 1px solid black;
+}
+
+
+.heroBanner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: rgb(235, 80, 39);
+
+}
+
+.heroImage {
+  height: 100%;
+  width: 50%; /*first in order within banner*/
+  object-fit: cover;
+  flex-shrink: 0; /* prevents image from being squashed by flex */
+}
+
+.heroText {
+  flex: 1; /* text takes up remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+ 
 }

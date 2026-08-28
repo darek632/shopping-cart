@@ -1,3 +1,99 @@
 .mainShop { 
     border: 1px solid brown;
 }
+
+/* card styling */
+
+.card { 
+    outline: 2px solid red;
+  background-color: 	#f7f7f7;
+  color: black;
+  /* height: 300px; */
+  width: 90%;
+  /* box-shadow: rgb(255, 210, 100) 3px 3px 3px 0px; */
+  border-radius: 4px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  padding: 10px;
+  display:flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 2px solid brown;
+}
+
+.card:hover { 
+    background-color: #bbbdbe;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+.cardImage { 
+    border-radius: 4px;
+    height: 150px;
+    width: 100%;
+   object-fit: contain;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+  min-height: 0; 
+  overflow: hidden;
+}
+
+h4 {
+    padding: none;
+    margin: none;
+}
+
+.title {
+/* removing h4 default padding/margins */
+    font-size: 0.8rem;
+  margin: 0.4rem 0 0.2rem 0; 
+  line-height: 1.0;
+}
+
+.description {
+    font-size: 0.75rem;
+  margin: 0;
+  line-height: 1.3;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.shopGrid {
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+  place-items: center;
+}
+
+.quantitySelector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.quantitySelector input {
+    width: 40px;
+    /* text-align: center; */
+}
+
+.addToCartButton {
+    margin-top: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 2px solid rgb(235, 80, 39);
+    background: rgb(235, 80, 39);
+    color: white;
+    cursor: pointer;
+}
+
