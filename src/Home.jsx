@@ -1,4 +1,5 @@
-import { useState,useEffect } from 'react'
+import { useState,useEffect} from 'react'
+import {Link} from 'react-router'
 import styles from './Home.module.css'
 import bannerImage from './assets/banner-plate.jpg'
 
@@ -74,7 +75,7 @@ export const Home = () => {
         <span className={styles.heroEyebrow}>New season · Just landed</span>
         <h2>Wear what moves you</h2>
         <p className={styles.heroSubtext}>Curated fits, honest prices, delivered to your door.</p>
-        <button className={styles.heroCta}>Shop the new arrivals</button>
+        <Link className={styles.heroCta} to="shop">Shop the new arrivals</Link>
     </div>
 </div>
                 <div></div>
